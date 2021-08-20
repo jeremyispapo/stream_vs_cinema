@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Free Page || Official</title>
+</head>
+<body>
+	<main>
+		<section class="content">
+			<h1 class="content__title">Stream vs Cine</h2>
+
+			<form action="">
+				<h2 class="form__title">¿Cuántas Películas ves al mes?</h2>
+				<label for="peliculas"></label>
+				<input type="number" id="peliculas" class="form__peliculas">
+				<h2 class="form__title">¿En qué plataformas están las películas?</h2>
+				<div class="optionsServices">
+					<input class="disable-C " type="checkbox" name="Netflix" id="netflix">
+					<label class="option netflixCheck" for="netflix">Netflix</label>
+					<input class="disable-C " type="checkbox" name="Amazon" id="amazon">
+					<label class="option amazonCheck" for="amazon">Amazon</label>
+					<input class="disable-C " type="checkbox" name="Disney" id="disneyplus">
+					<label class="option disneyCheck" for="disneyplus">Disney+</label>
+					<input class="disable-C " type="checkbox" name="HBO" id="hbomax">
+					<label class="option hboCheck" for="hbomax">HBO Max</label>
+				</div>
+				<div class="planesServicios">
+					<article class="card disney hidden" id="CDisney">
+							<img class="logo_disney" src="https://prod-static.disney-plus.net/assets/product/disneyplus/images/logo.1a56f51c764022ee769c91d894d44326.svg" alt="">
+							<select class="card__select"  name="disneyPlus" id="planDisney">
+								<option select value="0">Elije el plan</option>
+								<option value="5.99">Suscripción Mensual</option>
+								<option value="59.99">Suscripción Anual</option>
+							</select>
+					</article>
+					<article class="card amazon hidden " id="CAmazon">
+						<img class="logo_amazon" src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Amazon_Prime_Logo.svg" alt="">
+						<select class="card__select" name="amazonPrime" id="planAmazon">
+							<option selected value="0">Elije el plan</option>
+							<option value="4.17">Suscripción Mensual</option>
+						</select>
+					</article>
+					<article class="card hboMax hidden " id="CHBO">
+						<img class="logo_hbo"src="https://www.hbomax.com/img/hbo-max-h-w-l.svg" alt="">
+						<select class="card__select" name="hboMax" id="planHBO">
+							<option select value="0">Elije el plan</option>
+							<optgroup label="Version Movil">
+								<option value="4.88">Suscripción Mensual</option>
+								<option value="13.22">Suscripción Trimestral</option>
+								<option value="41.17">Suscripción Anual</option>
+							</optgroup>
+							<optgroup label="Version Estandard">
+								<option value="7.33">Suscripción Mensual</option>
+								<option value="19.59">Suscripción Trimestral</option>
+								<option value="62.51">Suscripción Anual</option>
+							</optgroup>
+						</select>
+					</article>
+					<article class="card netflix hidden" id="CNetflix">
+						<img class="logo_netflix"src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="">
+						<select class="card__select"name="Netflix" id="planNetflix">
+							<option selected value="0">Elije el plan</option>
+							<option value="6.11">Basico</option>
+							<option value="8.56">Estandard</option>
+							<option value="11.01">Premium</option>
+						</select>
+					</article>
+				</div>
+				<button class="btn"onclick="calcularCostos()" type="button">Calcular</button>
+			</form>
+			<div class="grid-result">
+				<h3 class="gridtitle1" >Streaming</h3>
+				<p id="resultStream" ></p>
+				<h3 class="gridtitle2" >Cine</h3>
+				<p id="resultCine" ></p>
+				<p id="finalResult"></p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p><a href="https://jeremyispapo.github.io/" target="_blank">Jeremyispapo</a> Ⓒ 2021</p>
+	</footer>
+	<script src="main.js"></script>
+</body>
+</html>
